@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ReactorKitExample
 //
-//  Created by BV on 2018. 5. 30..
+//  Created by Sung9 on 2018. 5. 30..
 //  Copyright © 2018년 Sung9. All rights reserved.
 //
 

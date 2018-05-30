@@ -1,0 +1,6 @@
+framework module Pods_ReactorKitExampleUITests {
+  umbrella header "Pods-ReactorKitExampleUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

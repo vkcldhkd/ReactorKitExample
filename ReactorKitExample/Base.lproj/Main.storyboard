@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CounterViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="CounterViewController" title="CounterViewController" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="CounterViewController" customModule="ReactorKitExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnO-tk-iRJ">
+                                <rect key="frame" x="179" y="328" width="17" height="31"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hv3-Xm-NOo">
+                                <rect key="frame" x="30" y="321.5" width="30" height="44"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="-"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1u-Qi-bwK">
+                                <rect key="frame" x="315" y="321.5" width="30" height="44"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="+"/>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="CVs-4T-4m1">
+                                <rect key="frame" x="137" y="293" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.76367777589999997" green="0.38483655449999998" blue="0.30571043489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="TR9-gQ-ET6"/>
+                                    <constraint firstAttribute="width" constant="100" id="mhq-wD-AJD"/>
+                                </constraints>
+                                <color key="color" red="0.99994784589999997" green="1" blue="0.99987405539999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pnO-tk-iRJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0Ru-fJ-G7g"/>
+                            <constraint firstItem="CVs-4T-4m1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2Vp-gq-x42"/>
+                            <constraint firstItem="Hv3-Xm-NOo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="GMX-OG-V69"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r1u-Qi-bwK" secondAttribute="trailing" constant="30" id="NRh-4a-NxO"/>
+                            <constraint firstItem="pnO-tk-iRJ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="bmX-CK-26V"/>
+                            <constraint firstItem="CVs-4T-4m1" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="fLW-j1-S3k"/>
+                            <constraint firstItem="r1u-Qi-bwK" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="kue-mK-1p6"/>
+                            <constraint firstItem="Hv3-Xm-NOo" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="rUg-k5-XCH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="CVs-4T-4m1" id="Ofg-bB-Sra"/>
+                        <outlet property="decreaseButton" destination="Hv3-Xm-NOo" id="x3I-Gf-77D"/>
+                        <outlet property="increaseButton" destination="r1u-Qi-bwK" id="1GW-5g-FgW"/>
+                        <outlet property="valueLabel" destination="pnO-tk-iRJ" id="jJ3-yd-JWe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+</document>
